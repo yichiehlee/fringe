@@ -84,6 +84,10 @@ In the build folder
 #If "conda install gxx_linux-64 / clangxx_osx-64"
 > CXX=${CXX} cmake -DCMAKE_INSTALL_PREFIX=../install ../src/fringe
 
+# If you got the error message when running this line, running this:
+# > pip install "pybind11[global]"
+# before CXX=${CXX} cmake -DCMAKE_INSTALL_PREFIX=../install ../src/fringe
+
 > make all
 > make install
 ```
